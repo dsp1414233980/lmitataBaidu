@@ -1,0 +1,8 @@
+body {
+    height: 100%;
+    min-width: 1000px;
+    cursor: default;
+}
+#wrapper{
+	height: 100%;
+}
