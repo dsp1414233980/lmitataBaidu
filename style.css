@@ -402,10 +402,6 @@ a:hover {
     text-decoration: none;
 }
 
-.user-set-menu.menu-top {
-    width: 70px;
-}
-
 .user-set-menu {
     padding-top: 6px;
     top: 26px;
@@ -451,6 +447,13 @@ a:hover {
     font-size: 12px;
 }
 
+#user_name_menu.user-set-menu a:hover,
+#user_setting_menu.user-set-menu a:hover {
+    background: #38F;
+    color: #FFF;
+    text-decoration: none
+}
+
 .container .user-set-menu .menu-arrow {
     background-position: 0 -90px;
 }
@@ -459,7 +462,9 @@ a:hover {
     float: right;
     right: 32px;
 }
-
+#u_sp .bdbriwrapper a:hover {
+    text-decoration: underline;
+}
 .user-set-menu .menu-arrow {
     position: absolute;
     z-index: 2;
@@ -1544,3 +1549,29 @@ a:hover {
 
 
 /*tab end*/
+.s-skin-layer {
+    position: fixed;
+    _position: absolute;
+    top: -500px;
+    left: 0;
+    width: 100%;
+    height: 288px;
+    background: #fff;
+    z-index: 1113;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .07);
+    -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .07);
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .07);
+}
+.s-skin-layer .s-skin-border {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    z-index: -1;
+    border-top: 1px #e3e3e3 solid;
+    border-bottom: 1px #e3e3e3 solid;
+    _width: 1000px;
+    _left: 50%;
+    _margin-left: -500px;
+}

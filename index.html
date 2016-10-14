@@ -77,8 +77,8 @@
                 <a id="usersetting_top" class="pf user-setting-top">
                     <span class="setting-text">设置</span>
                 </a>
-                <a href="#" class="bri" target="_blank"> 更多产品</a>
-                <div id="user_name_menu" class="isindex-wrap user-set-menu menu-top" style="display:none;">
+                <a id="bri" href="#" class="bri" target="_blank"> 更多产品</a>
+                <div id="user_name_menu" class="isindex-wrap user-set-menu menu-top" style="right: 154.1px; display: none;">
                     <div>
                         <a href="#"> 我的VIP </a>
                         <a href="#"> 个人中心 </a>
@@ -98,7 +98,7 @@
                     <span class="menu-arrow"> <em></em> </span>
                 </div>
                 <div class="bdnuarrow bdbriarrow" style="display: none;"></div>
-                <div class="bdbri bdbriimg" style="opacity: 1; min-height: 600px; display: none;">
+                <div class="bdbri bdbriimg" id="brbri" style="opacity: 1; min-height: 600px; display: none;">
                     <div class="bdmainlink">
                         <div class="bdbriimgtitle">更多产品</div>
                         <div class="briscrollwrapperContainer">
@@ -122,7 +122,7 @@
                                     <a href="#">
                                         <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/tuiguang.png?v=md5">百度推广
                                     </a>
-                                    <div class="bdbrievenmore ">
+                                    <div class="bdbrievenmore">
                                         <a href="# ">全部产品&gt;&gt;</a>
                                     </div>
                                 </div>
@@ -165,17 +165,16 @@
                         <div class="s-menu-container">
                             <div id="s_menu_gurd" class="s-menu-gurd" style="margin-top: 0px;">
                                 <div id="s_ctner_menus" class="s-ctner-menus s-opacity-blank8">
-                                    <span id="s_menu_mine" class="s-menu-item s-menu-mine s-opacity-white-background">
+                                    <span id="s_menu_mine" class="s-menu-item s-menu-mine s-opacity-white-background" data-id="100">
             							<div class="mine-icon"></div>
             							<div class="mine-text">我的关注</div>
             						</span>
                                     <div class="s-menus-outer">
                                         <div id="s_menus_wrapper" class="menus-wrapper">
-                                            <span class="s-menu-item s-opacity-white-background current"> 推荐  </span>
-                                            <span class="s-menu-item s-opacity-white-background"> 导航  </span>
-                                            <span class="s-menu-item s-opacity-white-background"> 视频  </span>
-                                            <span class="s-menu-item s_shopping s-opacity-white-background">
-            									<span>购物</span>
+                                            <span class="s-menu-item s-opacity-white-background current" data-id="2"> 推荐  </span>
+                                            <span class="s-menu-item s-opacity-white-background" data-id="1"> 导航  </span>
+                                            <span class="s-menu-item s-opacity-white-background" data-id="15"> 视频  </span>
+                                            <span class="s-menu-item s_shopping s-opacity-white-background" data-id="5">购物</span>
                                             <span class="bar-bg"></span>
                                             </span>
                                         </div>
@@ -274,33 +273,131 @@
                                                         <div class="dustbin"></div>
                                                     </div>
                                                 </div>
-                                                <div class="s-news-special s-news-item s-news-special-item-tpl-2 s-opacity-blank8">
+                                                <div class="s-news-special s-news-item s-news-special-item-tpl-1 s-opacity-blank8">
+                                                    <h2><a href="#" class="s-title-yahei">台湾青年团体直捣民进党部 抗议蔡英文砍7天假</a>
+            										<a href="javascript:;" class="del"></a>
+            										</h2>
                                                     <div class="s-pic-content">
-                                                        <div class="s-pic-content-own">
-                                                            <ul class="s-news-content-imgs clearfix">
-                                                                <li class="item-img-wrap">
-                                                                    <a href="#">
-                                                                        <img class="s-news-img" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1519133603,3212802848&amp;fm=80&amp;w=179&amp;h=119&amp;img.JPEG" width="179" height="119">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="#">
+                                                                    <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=588213564,1532446371&amp;fm=80&amp;w=179&amp;h=119&amp;img.JPEG" width="179" height="119">
+                                                                </a>
+                                                            </li>
+                                                            <li class="item-img-wrap">
+                                                                <a href="#">
+                                                                    <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=810062685,2317343003&amp;fm=80&amp;w=179&amp;h=119&amp;img.JPEG" width="179" height="119"> </a>
+                                                            </li>
+                                                            <li class="item-img-wrap">
+                                                                <a href="#">
+                                                                    <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3865263408,588714676&amp;fm=80&amp;w=179&amp;h=119&amp;img.JPEG" width="179" height="119">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="from">
+                                                        <span class="src-net"> 
+            											<a href="#"> 新浪新闻 </a> 
+            										</span>
+                                                        <span class="src-time">10-14 09:40</span>
+                                                        <span class="hot-point">热点</span>
+                                                        <div class="dustbin"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="s_content_5" class="s-content" style="display: none;">
+                            	购物页
+                            </div>
+                            <div id="s_content_100" class="s-content" style="display: none;">
+                                <div id="s_xmancard_mine" class="s-xmancard-mine s-xmancard">
+                                    <div class="s-code-blocks s-block-nav s-mblock-up">
+                                        <div class="s-block-container">
+                                            <div class="s-mblock-title s-opacity-border4-bottom">
+                                                <div class="title-content">
+                                                    <div class="edit-tool" style="display:none;">
+                                                        <div class="tool-item edit-indir" style="display: none;">
+                                                            <input class="tool-add-dir" maxlength="19" type="text">
+                                                            <div class="dir-enter">添加</div>
+                                                            <div class="dir-cancel">取消</div>
+                                                        </div>
+                                                        <div class="tool-item edit-add" style="display:none;">
+                                                            <span class="add-icon"></span>
+                                                            <span>添加分类</span>
+                                                        </div>
+                                                        <div class="tool-item set-btn edit-comp" data-cmd="unedit">完成</div>
+                                                    </div>
+                                                    <span class="mine-title"> 
+                            								<div class="mine-title-icon">
+                            									 <em></em> 
+                            								</div>
+                            								<span class="mine-title-text"> 我的导航 </span>
+                                                    <span class="mine-title-num"> (<span>0</span>) </span>
+                                                    </span>
+                                                </div>
+                                                <div class="s-setbar" style="display: none;">
+                                                    <div class="set-bar-content">
+                                                        <div class="set-menu blank-menu">
+                                                            <div class="set-btn set-add" title="添加"> 添加 </div>
+                                                            <div class="set-btn set-edit" title="编辑" style="display: none;"> 编辑 </div>
+                                                            <div class="set-btn edit-class" style="display: none;">
+                                                                <span class="class-icon"></span>
+                                                                <span>分类显示</span>
+                                                            </div>
+                                                            <div class="set-btn fanli-class classed">
+                                                                <span class="class-icon"></span>
+                                                                <span>返利模式</span>
+                                                            </div>
+                                                            <div class="set-btn set-totop" title="置顶" style="color: rgb(153, 153, 153);"> 置顶 </div>
                                                         </div>
                                                     </div>
-                                                    <div class="s-block-container">
-                                                        <div class="s-block-container-own">
-                                                            <div class="s-text-content">
-                                                                <h2>
-            													<a href="#" class="s-title-yahei">泰国总理宣布新国王 王储玛哈-哇集拉隆功继任</a>
-            													<a href="javascript:;" class="del"></a>
-            												</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips-manager-area">
+                                        <div class="tips-manager-btn">
+                                            <span class="manager-btn-icon"></span>
+                                            <span class="manager-btn-text"> 自定义</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="s_content_1" class="s-content" style="display: none;">
+                                <div id="s_xmancard_nav" class="s-xmancard-nav s-xmancard">
+                                    <div class="nav-block-wrapper fanli-patern">
+                                        <div class="water-container">
+                                            <div class="s-nav-wrapper s-nav-personal">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <h1>猜你喜欢</h1>
+                                                        <div class="fanli-nav nav-item ">
+                                                            <a href="http://www.nuomi.com/?vip_frm=super_nav_vip" title="百度糯米" class="nav-block" target="_blank">
+                                                                <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1">
+                                                                <span class="nav-txt">百度糯米</span>
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate">
+                                                                <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank">最高返利50.25%</a>
                                                             </div>
-                                                            <div class="from">
-                                                                <span class="src-net"> 
-		            											<a href="#" target="_blank"> 搜狐新闻 </a> 
-		            										</span>
-                                                                <span class="src-time">10-13 21:01</span>
-                                                                <span class="hot-point">热点</span>
-                                                                <div class="dustbin"></div>
+                                                            <div class="fanli-tag">
+                                                                <a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item ">
+                                                            <a href="http://www.jd.com/?vip_frm=super_nav_vip" title="京东商城" class="nav-block" target="_blank">
+                                                                <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95541.png">
+                                                                <span class="nav-txt">京东商城</span>
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="http://vip.baidu.com/m_101?vip_frm=super_mynav_mall" target="_blank">最高返利80.00%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href="http://vip.baidu.com/m_101?vip_frm=super_mynav_mall" target="_blank"></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -310,26 +407,197 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="s_top_feed" class="top-feed">
-                            <div class="to-top" style="visibility: visible;">
-                                <div class="icon-mask">
-                                    <div class="text"> 回到顶部 </div>
+                            <div id="s_content_15"  class="s-content" style="display: none;">
+                                <div data-curtab="" id="s_xmancard_video" data-logactid="page-card-tpl-video" class="s-xmancard-video s-xmancard">
+                                    <div class="water-container">
+                                        <div class="s-video-wrapper clearfix">
+                                            <div class="video-col clearfix">
+                                                <div class="item-wrapper">
+                                                    <div class="video-item video-item-1">
+                                                        <div class="v-pic v-pic-1 pic-hover">
+                                                            <div class="nointerest buzz"></div>
+                                                            <div class="dustbin"></div>
+                                                            <a class="pic" href="#">
+                                                                <img class="img" src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2086123546,538541760&amp;fm=58" width="195px" height="267px">
+                                                                <div class="img-layer-ie"></div>
+                                                            </a>
+                                                            <div class="black">
+                                                            </div>
+                                                            <a class="bg img-click" href="#></a>
+                                                            <a class=" img-click " href="# ">
+                                                                <span class="v-tag ">10-08期</span>
+                                                            </a>
+                                                            <a href="# " class="img-click tag-sort tag-sort2 "></a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">中国好声音第一季</a>
+                                                            </div>
+                                                            <div class="score ">
+                                                                <span class="score-star ">
+                        												<span class="star-active " style="width:50.7px "></span>
+                                                                </span>7.8
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-col clearfix ">
+                                                <div class="item-wrapper ">
+                                                    <div class="video-item video-item-1 ">
+                                                        <div class="v-pic v-pic-1 pic-hover ">
+                                                            <div class="nointerest buzz "></div>
+                                                            <div class="dustbin "></div>
+                                                            <a class="pic " href="# ">
+                                                                <img class="img " src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3466689900,1133230580&amp;fm=58 " width="195px " height="267px ">
+                                                                <div class="img-layer-ie "></div>
+                                                            </a>
+                                                            <div class="black "></div>
+                                                            <a class="bg img-click " href="# "></a>
+                                                            <a class="img-click " href="# ">
+                                                                <span class="v-tag ">78:00</span>
+                                                            </a>
+                                                            <a href="# " class="img-click tag-sort tag-sort4 "></a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">僵尸新娘</a>
+                                                            </div>
+                                                            <div class="score ">
+                                                                <span class="score-star ">
+                        												<span class="star-active " style="width:52.65px "></span>
+                                                                </span>8.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-col clearfix ">
+                                                <div class="item-wrapper">
+                                                    <div class="video-item video-item-2 ">
+                                                        <div class="v-pic v-pic-2 pic-hover ">
+                                                            <div class="nointerest buzz "></div>
+                                                            <div class="dustbin "></div>
+                                                            <a class="pic " href="# ">
+                                                                <img class="img " src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2126982269,3529648456&amp;fm=58 " width="195px " height="101px ">
+                                                                <div class="img-layer-ie "></div>
+                                                            </a>
+                                                            <div class="black "></div>
+                                                            <a class="bg img-click " href="# "></a>
+                                                            <a class="img-click " href="# ">
+                                                                <span class="v-tag ">06:28</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">美媒污蔑中国维和遭打脸</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-wrapper ">
+                                                    <div class="video-item video-item-2 ">
+                                                        <div class="v-pic v-pic-2 pic-hover ">
+                                                            <div class="nointerest buzz "></div>
+                                                            <div class="dustbin "></div>
+                                                            <a class="pic " href="# ">
+                                                                <img class="img " src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=359512841,2139374449&amp;fm=58 " width="195px " height="101px ">
+                                                                <div class="img-layer-ie "></div>
+                                                            </a>
+                                                            <div class="black "></div>
+                                                            <a class="bg img-click " href="# "></a>
+                                                            <a class="img-click " href="# ">
+                                                                <span class="v-tag ">08:33</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">【老美你怎么看】挑战火鸡面，瞬间出汗流鼻涕</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-col clearfix ">
+                                                <div  class="item-wrapper ">
+                                                    <div class="video-item video-item-2 ">
+                                                        <div class="v-pic v-pic-2 pic-hover ">
+                                                            <div class="nointerest buzz "></div>
+                                                            <div class="dustbin "></div>
+                                                            <a class="pic " href="# ">
+                                                                <img class="img " src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1621592764,3729958689&amp;fm=58 " width="195px " height="101px ">
+                                                                <div class="img-layer-ie "></div>
+                                                            </a>
+                                                            <div class="black "></div>
+                                                            <a class="bg img-click " href="# "></a>
+                                                            <a class="img-click " href="# ">
+                                                                <span class="v-tag ">01:45</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">I.O.I出席品牌活动 青春可爱难挡俏皮魅力</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-wrapper ">
+                                                    <div class="video-item video-item-2 ">
+                                                        <div class="v-pic v-pic-2 pic-hover ">
+                                                            <div class="nointerest buzz "></div>
+                                                            <div class="dustbin "></div>
+                                                            <a class="pic " href="# ">
+                                                                <img class="img " src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=462322546,2633619282&amp;fm=58 " width="195px " height="101px ">
+                                                                <div class="img-layer-ie ">
+                                                                </div>
+                                                            </a>
+                                                            <div class="black "></div>
+                                                            <a class="bg img-click " href="# "></a>
+                                                            <a class="img-click " href="# ">
+                                                                <span class="v-tag ">02:19</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v-txt s-opacity-background1 s-opacity-blank3 ">
+                                                            <div class="text ">
+                                                                <a class="s-opacity-blank3 " href="# ">少时秀英演绎秋日时尚 珉豪男友风亮相品牌活动</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="icon"></span>
                             </div>
+                            <div id="s_top_feed " class="top-feed ">
+                                <div class="to-top " style="visibility: hidden; ">
+                                    <div class="icon-mask ">
+                                        <div class="text "> 回到顶部 </div>
+                                    </div>
+                                    <span class="icon "></span>
+                                </div>
+                            </div>
+                            <!-- top-feed end -->
                         </div>
-                        <!-- top-feed end -->
+                        <!--  -->
                     </div>
-                    <!--  -->
+                    <!-- s_main end -->
                 </div>
-                <!-- s_main end -->
+                <!-- tab end -->
+                <!-- 皮肤层 -->
+                <div class="s-skin-layer" id="s-skin-layer" style="opacity: 0;top: 0">
+                	<div class="s-skin-border">
+                		<div class="s-skin-arrow"></div>
+                	</div>
+
+                </div>
+                <!-- 皮肤层结束 -->
             </div>
-            <!-- tab end -->
+            <!-- 主体部分结束 -->
         </div>
-        <!-- 主体部分结束 -->
-    </div>
-    <!-- wrapper end -->
+        <!-- wrapper end -->
+        <script src="script/jquery-3.1.1.min.js "></script>
+        <script src="script/main.js "></script>
 </body>
 
 </html>
