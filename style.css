@@ -248,16 +248,16 @@ em {
     color: #fff;
 }
 
-.upfunc-menus .s-icons {
+.upfunc-menus .icons {
     float: left;
     _display: inline;
 }
 
-.container .upfunc-menus .s-icons a {
+.container .upfunc-menus .icons a {
     color: #fff;
 }
 
-.upfunc-menus .s-icons a {
+.upfunc-menus .icons a {
     position: relative;
     height: 32px;
     line-height: 32px;
@@ -268,3 +268,238 @@ em {
     display: inline-block;
     text-shadow: none;
 }
+
+
+/*顶部左侧结束*/
+
+
+/*顶部右侧*/
+
+#u_sp {
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 590px;
+    font-size: 13px;
+    text-align: right;
+    color: #999;
+}
+.container .sp-menu a, .container #nv a, .container #nv b, .container #lm, .container #lm a {
+    color: #fff;
+}
+.sp-menu .mnav {
+    font-weight: bold;
+}
+.sp-menu a {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 19px;
+    color: #555;
+    text-decoration: underline;
+    outline: none;
+    display: inline-block;
+    text-shadow: none;
+}
+#u_sp .user-name-top {
+    position: relative;
+}
+#u_sp .user-name-top {
+    margin-right: 0;
+    height: 32px;
+    font-weight: normal;
+}
+#u_sp .user-name-top, #u_sp .user-setting-top, #u_sp .bri {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    height: 32px;
+    line-height: 32px;
+}
+.user-name-top, .user-name-set {
+    display: inline-block;
+    overflow: hidden;
+    height: 20px;
+    vertical-align: top;
+    margin-left: -7px;
+    text-align: left;
+}
+.user-name-top .user-name {
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    _width: 64px;
+    text-decoration: underline;
+}
+#u_sp .user-name-top, #u_sp .user-setting-top, #u_sp .bri {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    height: 32px;
+    line-height: 32px;
+}
+.container #u_sp .bri {
+    height: 31px;
+    line-height: 32px;
+    margin-top: 0;
+}
+#u_sp .bri {
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    background: #38f;
+    background: #398bfb;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #398bfb;
+    text-decoration: none;
+}
+.user-set-menu.menu-top {
+    width: 70px;
+}
+.user-set-menu {
+    padding-top: 6px;
+    top: 26px;
+    position: absolute;
+    right: 75px;
+    *right: 73px;
+    float: right;
+    width: 100px;
+    z-index: 999;
+    text-align: left;
+}
+.container .user-set-menu div {
+    border-color: #FFF;
+}
+.user-set-menu div {
+    position: relative;
+    border: 1px solid #E3E3E3;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+}
+#user_name_menu.user-set-menu a, #user_setting_menu.user-set-menu a {
+    text-shadow: none;
+    color: #000;
+}
+.user-set-menu a {
+    text-decoration: none;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 8px;
+    background-color: #fff;
+    -moz-user-select: none;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    color: #333;
+    margin: 0;
+    font-size: 12px;
+}
+.container .user-set-menu .menu-arrow {
+    background-position: 0 -90px;
+}
+.user-set-menu.menu-top .menu-arrow {
+    float: right;
+    right: 32px;
+}
+.user-set-menu .menu-arrow {
+    position: absolute;
+    z-index: 2;
+    top: -4px;
+    left: 28px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 5px dashed transparent;
+    border-bottom: 5px solid #e3e3e3;
+    font-size: 0;
+}
+.user-set-menu.menu-top {
+    width: 70px;
+}
+.user-set-menu .menu-arrow em {
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    display: block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    color: #666;
+    border-top: 5px dashed transparent;
+    border-left: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    border-bottom: 5px solid #fff;
+}
+#u_sp .bdbri {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 85px;
+    min-height: 100px;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    text-shadow: none;
+}
+#u_sp .bdbriimgtitle {
+    color: #333;
+    text-align: center;
+    width: 66px;
+    height: 30px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor: default;
+}
+#u_sp .briscrollwrapperContainer {
+    position: relative;
+}
+#u_sp .briscrollwrapper {
+    overflow: hidden;
+    position: relative;
+}
+#u_sp .bdbriwrapper a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    font-size: 12px;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    line-height: 14px;
+}
+#u_sp .bdbriwrapper a img {
+    display: block;
+    height: 36px;
+    width: auto;
+    margin: 10px auto 5px;
+    cursor: pointer;
+}
+#u_sp .bdbriwrapper .bdbrievenmore {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+}
+
+/*顶部右侧结束*/
