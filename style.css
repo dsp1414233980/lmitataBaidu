@@ -3,6 +3,116 @@ body {
     min-width: 1000px;
     cursor: default;
 }
-#wrapper{
-	height: 100%;
+
+body,
+form {
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    text-align: center;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px arial;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 768px;
+    cursor: default;
+}
+
+.backgroudwrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    /*ie*/
+    zoom: 1;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 768px;
+    cursor: default;
+    background: none;
+}
+
+#top-wrap {
+    position: absolute;
+    z-index: 99;
+    min-width: 1000px;
+    width: 100%;
+}
+
+.container .top-wrap {
+    border: none;
+    background: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 25, 50, .3)), to(rgba(15, 25, 50, .3)));
+    background-image: -moz-linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    background-image: -ms-linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    background-image: -o-linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    background-image: linear-gradient(rgba(15, 25, 50, .3) 0, rgba(15, 25, 50, .3) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#330f1932, endColorstr=#330f1932);
+}
+
+.top-wrap {
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.top-wrap .center-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    _width: 1000px;
+    height: 100%;
 }
